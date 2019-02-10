@@ -8,8 +8,10 @@
         <e p="Scripts" t="Include">
           <e p="CameraFollowPlayer.cs" t="Include" />
           <e p="CharacterMover.cs" t="Include" />
+          <e p="DoorOpen.cs" t="Include" />
           <e p="floatData.cs" t="Include" />
           <e p="playerPush.cs" t="Include" />
+          <e p="SwitchEnable.cs" t="Include" />
         </e>
       </e>
       <e p="DGM 2610 Side Scrolling Game.sln" t="IncludeFlat" />

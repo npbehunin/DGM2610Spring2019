@@ -16,16 +16,11 @@ public class CharacterMover : MonoBehaviour
 	void Start ()
 	{
 		Controller = GetComponent<CharacterController>();
-		Debug.Log("Started");
 	}
 	
 	void Update ()
 	{
 		{
-			Gravity = 30;
-			MoveSpeed = 9;
-			JumpSpeed = 16;
-			
 			position.Set(MoveSpeed * Input.GetAxis("Horizontal"), position.y, 0);
 			if (Controller.isGrounded)
 			{
@@ -43,12 +38,4 @@ public class CharacterMover : MonoBehaviour
 		position.y -= Gravity * Time.deltaTime;
 		Controller.Move(position * Time.deltaTime);
 	}
-
-	void FreezePlayer()
-	{
-		Gravity = 0;
-		MoveSpeed = 0;
-		JumpSpeed = 0;
-	}
-
 }
