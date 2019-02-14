@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Prototype 1 (Test scene delete later).unity
+- path: Assets/Scenes/Prototype 1 (Compressed level test).unity
   isLoaded: 1
   isActive: 1
