@@ -59,6 +59,7 @@
     <Compile Include="Assets\Scripts\CharacterMover.cs" />
     <Compile Include="Assets\Scripts\DoorOpen.cs" />
     <Compile Include="Assets\Scripts\floatData.cs" />
+    <Compile Include="Assets\Scripts\LightBlink.cs" />
     <Compile Include="Assets\Scripts\playerPush.cs" />
     <Compile Include="Assets\Scripts\SwitchEnable.cs" />
     <Compile Include="Assets\Scripts\Updating.cs" />
