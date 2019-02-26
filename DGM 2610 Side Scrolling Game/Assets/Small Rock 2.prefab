@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4617179460323700}
   - component: {fileID: 33427338476347034}
   - component: {fileID: 23607071588492754}
-  - component: {fileID: 64822964456379750}
   m_Layer: 0
   m_Name: Small Rock 2
   m_TagString: Untagged
@@ -83,18 +82,4 @@ MeshFilter:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1751994419266318}
-  m_Mesh: {fileID: 4300008, guid: fe2611d95a1f04b4898560fbdc88c8c1, type: 3}
---- !u!64 &64822964456379750
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1751994419266318}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300008, guid: fe2611d95a1f04b4898560fbdc88c8c1, type: 3}
