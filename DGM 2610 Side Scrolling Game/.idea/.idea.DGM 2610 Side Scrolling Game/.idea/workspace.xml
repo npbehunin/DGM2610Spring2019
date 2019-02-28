@@ -37,25 +37,33 @@
       <file leaf-file-name="CharacterMover.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMover.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+            <state relative-caret-position="540">
+              <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+              <folding>
+                <marker date="1551389114037" expanded="false" signature="6:78" ph="..." />
+                <marker date="1551389114037" expanded="true" signature="123:891" ph="{...}" />
+                <marker date="1551389114037" expanded="true" signature="314:372" ph="{...}" />
+                <marker date="1551389114037" expanded="true" signature="390:889" ph="{...}" />
+                <marker date="1551389114037" expanded="true" signature="500:794" ph="{...}" />
+                <marker date="1551389114037" expanded="true" signature="630:714" ph="/* rotation.Set(0, Input.GetAxis(&quot;Horizontal&quot;), 0); ... */" />
+                <marker date="1551389114037" expanded="true" signature="748:789" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LightBlink.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/LightBlink.cs">
+      <file leaf-file-name="RollingRock.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/RollingRock.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="22" column="48" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+            <state relative-caret-position="540">
+              <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
               <folding>
-                <marker date="1550553953135" expanded="false" signature="6:78" ph="..." />
-                <marker date="1550553953135" expanded="true" signature="119:637" ph="{...}" />
-                <marker date="1550553953135" expanded="true" signature="221:252" ph="{...}" />
-                <marker date="1550553953135" expanded="true" signature="274:422" ph="{...}" />
-                <marker date="1550553953135" expanded="true" signature="292:419" ph="{...}" />
-                <marker date="1550553953135" expanded="true" signature="442:526" ph="{...}" />
-                <marker date="1550553953135" expanded="true" signature="548:635" ph="{...}" />
+                <marker date="1551391005006" expanded="false" signature="6:104" ph="..." />
+                <marker date="1551391005006" expanded="true" signature="146:863" ph="{...}" />
+                <marker date="1551391005006" expanded="true" signature="342:861" ph="{...}" />
+                <marker date="1551391005006" expanded="true" signature="558:760" ph="{...}" />
+                <marker date="1551391005006" expanded="true" signature="767:858" ph="{...}" />
+                <marker date="1551391005006" expanded="true" signature="865:1000" ph="/* TO DO: Tell the rock to move. Raycast is set up and working, AND the player has his speed slowed down. Now jus ... */" />
               </folding>
             </state>
           </provider>
@@ -76,25 +84,26 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SwitchEnable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DoorOpen.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LightBlink.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraFollowPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RollingRock.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMover.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SwitchEnable.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/playerPush.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MoveCharacter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharacterMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/v2Movement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SwitchEnable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DoorOpen.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CharacterMover.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraFollowPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Updating.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LightBlink.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/playerPush.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CharacterMover.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RollingRock.cs" />
       </list>
     </option>
   </component>
@@ -105,10 +114,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="805" />
-    <option name="y" value="132" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="x" value="121" />
+    <option name="y" value="5" />
+    <option name="width" value="1226" />
+    <option name="height" value="1086" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -116,7 +125,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="SolutionExplorer" />
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -130,6 +138,7 @@
         <option name="show-hidden-items" value="false" />
       </pane>
       <pane id="Scratches" />
+      <pane id="SolutionExplorer" />
       <pane id="FileSystemExplorer" />
     </panes>
   </component>
@@ -180,11 +189,12 @@
       <workItem from="1549996193979" duration="620000" />
       <workItem from="1549997025939" duration="597000" />
       <workItem from="1550000230280" duration="1450000" />
+      <workItem from="1551384666358" duration="6265000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5262000" />
+    <option name="totallyTimeSpent" value="11527000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -196,31 +206,31 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="805" y="132" width="974" height="1047" extended-state="0" />
+    <frame x="121" y="5" width="1226" height="1086" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Errors In Solution" order="3" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Unit Tests" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28118163" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22555746" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unity" order="14" />
-      <window_info anchor="right" id="Database" order="5" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="13" />
       <window_info anchor="right" id="Unit Tests Coverage" order="4" />
     </layout>
   </component>
@@ -247,6 +257,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+          <folding>
+            <marker date="1551389114037" expanded="false" signature="6:78" ph="..." />
+            <marker date="1551389114037" expanded="true" signature="123:891" ph="{...}" />
+            <marker date="1551389114037" expanded="true" signature="314:372" ph="{...}" />
+            <marker date="1551389114037" expanded="true" signature="390:889" ph="{...}" />
+            <marker date="1551389114037" expanded="true" signature="500:794" ph="{...}" />
+            <marker date="1551389114037" expanded="true" signature="630:714" ph="/* rotation.Set(0, Input.GetAxis(&quot;Horizontal&quot;), 0); ... */" />
+            <marker date="1551389114037" expanded="true" signature="748:789" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -257,22 +276,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/LightBlink.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMover.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" column="48" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
-          <folding>
-            <marker date="1550553953135" expanded="false" signature="6:78" ph="..." />
-            <marker date="1550553953135" expanded="true" signature="119:637" ph="{...}" />
-            <marker date="1550553953135" expanded="true" signature="221:252" ph="{...}" />
-            <marker date="1550553953135" expanded="true" signature="274:422" ph="{...}" />
-            <marker date="1550553953135" expanded="true" signature="292:419" ph="{...}" />
-            <marker date="1550553953135" expanded="true" signature="442:526" ph="{...}" />
-            <marker date="1550553953135" expanded="true" signature="548:635" ph="{...}" />
-          </folding>
+        <state relative-caret-position="210">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CameraFollowPlayer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/LightBlink.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMover.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -291,14 +309,6 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/MoveCharacter.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMovement.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/v2Movement.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/playerPush.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMover.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/SwitchEnable.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/CameraFollowPlayer.cs">
       <provider selected="true" editor-type-id="text-editor">
@@ -312,6 +322,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/playerPush.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="20" selection-start-line="8" selection-start-column="4" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMover.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+          <folding>
+            <marker date="1551389114037" expanded="false" signature="6:78" ph="..." />
+            <marker date="1551389114037" expanded="true" signature="123:891" ph="{...}" />
+            <marker date="1551389114037" expanded="true" signature="314:372" ph="{...}" />
+            <marker date="1551389114037" expanded="true" signature="390:889" ph="{...}" />
+            <marker date="1551389114037" expanded="true" signature="500:794" ph="{...}" />
+            <marker date="1551389114037" expanded="true" signature="630:714" ph="/* rotation.Set(0, Input.GetAxis(&quot;Horizontal&quot;), 0); ... */" />
+            <marker date="1551389114037" expanded="true" signature="748:789" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RollingRock.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+          <folding>
+            <marker date="1551391005006" expanded="false" signature="6:104" ph="..." />
+            <marker date="1551391005006" expanded="true" signature="146:863" ph="{...}" />
+            <marker date="1551391005006" expanded="true" signature="342:861" ph="{...}" />
+            <marker date="1551391005006" expanded="true" signature="558:760" ph="{...}" />
+            <marker date="1551391005006" expanded="true" signature="767:858" ph="{...}" />
+            <marker date="1551391005006" expanded="true" signature="865:1000" ph="/* TO DO: Tell the rock to move. Raycast is set up and working, AND the player has his speed slowed down. Now jus ... */" />
+          </folding>
         </state>
       </provider>
     </entry>
