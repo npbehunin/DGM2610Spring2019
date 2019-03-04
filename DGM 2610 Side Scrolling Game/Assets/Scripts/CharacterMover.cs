@@ -10,7 +10,7 @@ public class CharacterMover : MonoBehaviour
 	public float MoveSpeed;
 	public float JumpSpeed;
 	
-	private Vector3 position;
+	public Vector3 position;
 	private Vector3 rotation;
 	
 	void Start ()
@@ -25,9 +25,6 @@ public class CharacterMover : MonoBehaviour
 			if (Controller.isGrounded)
 			{
 				position.Set(MoveSpeed * Input.GetAxis("Horizontal"), 0, 0);
-				position = transform.TransformDirection(position);
-				//rotation.Set(0, Input.GetAxis("Horizontal"), 0);
-				//transform.Rotate(rotation);
 
 				if (Input.GetButton("Jump"))
 				{
@@ -36,6 +33,23 @@ public class CharacterMover : MonoBehaviour
 			}
 		}
 		position.y -= Gravity * Time.deltaTime;
+		//normalposition.y = position.y + Gravity * Time.deltaTime;
 		Controller.Move(position * Time.deltaTime);
+	}
+
+	void OnTriggerStay(Collider other)
+	{
+		if (other.gameObject.CompareTag("RollingRock"))
+		{
+			MoveSpeed = 5f;
+		}
+	}
+
+	void OnTriggerExit(Collider other)
+	{
+		if (other.gameObject.CompareTag("RollingRock"))
+		{
+			MoveSpeed = 9f;
+		}
 	}
 }
