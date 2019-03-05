@@ -8,12 +8,15 @@
         <e p="Scripts" t="Include">
           <e p="CameraFollowPlayer.cs" t="Include" />
           <e p="CharacterMover.cs" t="Include" />
+          <e p="CMON.cs" t="Include" />
           <e p="DoorOpen.cs" t="Include" />
           <e p="floatData.cs" t="Include" />
+          <e p="Lazerbeam.cs" t="Include" />
           <e p="LightBlink.cs" t="Include" />
           <e p="PlayerDeath.cs" t="Include" />
           <e p="RBCharacterMover.cs" t="Include" />
           <e p="RollingRock.cs" t="Include" />
+          <e p="ShootingMechanic.cs" t="Include" />
           <e p="SwitchEnable.cs" t="Include" />
           <e p="ThingMovement.cs" t="Include" />
           <e p="Updating.cs" t="Include" />

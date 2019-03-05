@@ -6,6 +6,8 @@ TagManager:
   tags:
   - RollingRock
   - Thing
+  - Lazerbeam
+  - ShootingArea
   layers:
   - Default
   - TransparentFX
@@ -18,7 +20,7 @@ TagManager:
   - PostProcessing
   - rockMask
   - playerMask
-  - 
+  - ShootingArea
   - 
   - 
   - 

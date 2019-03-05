@@ -57,12 +57,15 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\CameraFollowPlayer.cs" />
     <Compile Include="Assets\Scripts\CharacterMover.cs" />
+    <Compile Include="Assets\Scripts\CMON.cs" />
     <Compile Include="Assets\Scripts\DoorOpen.cs" />
     <Compile Include="Assets\Scripts\floatData.cs" />
+    <Compile Include="Assets\Scripts\Lazerbeam.cs" />
     <Compile Include="Assets\Scripts\LightBlink.cs" />
     <Compile Include="Assets\Scripts\PlayerDeath.cs" />
     <Compile Include="Assets\Scripts\RBCharacterMover.cs" />
     <Compile Include="Assets\Scripts\RollingRock.cs" />
+    <Compile Include="Assets\Scripts\ShootingMechanic.cs" />
     <Compile Include="Assets\Scripts\SwitchEnable.cs" />
     <Compile Include="Assets\Scripts\ThingMovement.cs" />
     <Compile Include="Assets\Scripts\Updating.cs" />
