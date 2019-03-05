@@ -9,13 +9,13 @@ public class ThingMovement : MonoBehaviour {
 	public Vector3 offset;
 	
 	public float MoveSpeed;
-	public float smoothSpeed = 4f;
+	public float smoothSpeed = 0f;
 
 	public CharacterMover player;
 	
 	void Start ()
 	{
-		MoveSpeed = 7f;
+		MoveSpeed = 0f;
 	}
 	
 	void LateUpdate () 
