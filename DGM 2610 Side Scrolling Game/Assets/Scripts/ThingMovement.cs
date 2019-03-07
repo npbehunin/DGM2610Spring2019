@@ -4,18 +4,21 @@ using UnityEngine;
 
 public class ThingMovement : MonoBehaviour {
 
-	private Vector3 position;
+	public Vector3 position;
 	private Vector3 playerPosition;
 	public Vector3 offset;
 	
 	public float MoveSpeed;
-	public float smoothSpeed = 0f;
+	public float smoothSpeed = 10f;
 
 	public CharacterMover player;
+
+	private bool canBeShot;
 	
 	void Start ()
 	{
-		MoveSpeed = 0f;
+		MoveSpeed = 9f;
+		canBeShot = true;
 	}
 	
 	void LateUpdate () 
@@ -29,6 +32,29 @@ public class ThingMovement : MonoBehaviour {
 		
 		transform.position = smoothedPosition;
 	}
+
+	void OnTriggerEnter(Collider other)
+	{
+		if (other.gameObject.CompareTag("Lazerbeam"))
+		{
+			if (canBeShot)
+			{
+				MoveSpeed = 6f;
+				Debug.Log("HIT");
+				Destroy(other);
+				StartCoroutine(Invincibility());
+			}
+		}
+	}
+
+	IEnumerator Invincibility()
+	{
+		canBeShot = false;
+		yield return new WaitForSeconds(2);
+		canBeShot = true;
+		MoveSpeed = 10f;
+	}
+	
 }
 
 //Position is used for the object's local position. Here we use transform.position for the object's location in the

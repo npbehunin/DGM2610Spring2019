@@ -11,6 +11,7 @@
           <e p="CMON.cs" t="Include" />
           <e p="DoorOpen.cs" t="Include" />
           <e p="floatData.cs" t="Include" />
+          <e p="GameStartSettings.cs" t="Include" />
           <e p="Lazerbeam.cs" t="Include" />
           <e p="LightBlink.cs" t="Include" />
           <e p="PlayerDeath.cs" t="Include" />
@@ -19,6 +20,7 @@
           <e p="ShootingMechanic.cs" t="Include" />
           <e p="SwitchEnable.cs" t="Include" />
           <e p="ThingMovement.cs" t="Include" />
+          <e p="UIDanger.cs" t="Include" />
           <e p="Updating.cs" t="Include" />
         </e>
       </e>

@@ -43,12 +43,10 @@ public class Lazerbeam : MonoBehaviour
 	{	
 		//Transform
 		transform.position += movementVector * Time.deltaTime;
-		Debug.Log(targetpos);
 
 		//Rotation
 		float step = speed * Time.deltaTime;
 		Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, step, 0.0f);
-		Debug.DrawRay(transform.position, newDir, Color.red);
 
 		// Move our position a step closer to the target.
 		transform.rotation = Quaternion.LookRotation(newDir);
