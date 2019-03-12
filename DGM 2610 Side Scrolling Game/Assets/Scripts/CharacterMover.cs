@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.Serialization.Formatters;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CharacterMover : MonoBehaviour
 {
@@ -15,11 +17,15 @@ public class CharacterMover : MonoBehaviour
 
 	Rigidbody m_rb;
 	private RollingRock rollingrock;
+
+	private float distance = -1.3f;
+	private int rockmask = 1 << 9;
+
 	
 	void Start ()
 	{
 		Controller = GetComponent<CharacterController>();
-		m_rb = rollingrock.GetComponent<Rigidbody>();
+		//m_rb = rollingrock.GetComponent<Rigidbody>();
 	}
 	
 	void Update ()
@@ -45,7 +51,11 @@ public class CharacterMover : MonoBehaviour
 	{
 		if (other.gameObject.CompareTag("RollingRock"))
 		{
-			MoveSpeed = 3f;
+			//if (Input.GetAxis("Horizontal") > 0)
+			{
+				MoveSpeed = 3f;
+			}
+			//else MoveSpeed = 9f;
 		}
 	}
 
@@ -53,10 +63,28 @@ public class CharacterMover : MonoBehaviour
 	{
 		if (other.gameObject.CompareTag("RollingRock"))
 		{
-			if (MoveSpeed > 0)
+			RaycastHit hit;
+			if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.right), out hit, Mathf.Infinity, rockmask))
 			{
-				MoveSpeed = 0f;
+				if (Input.GetAxis("Horizontal") > 0)
+				{
+					Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.right) * 100);
+					Debug.Log("Stopped right side");
+					MoveSpeed = 0f;
+				}
 			}
+
+
+			if (Physics.Raycast(transform.position, transform.TransformDirection(-Vector3.right), out hit, Mathf.Infinity, rockmask))
+			{
+				if (Input.GetAxis("Horizontal") < 0)
+				{
+					Debug.DrawRay(transform.position, transform.position + transform.TransformDirection(-Vector3.right) * 100);
+					Debug.Log("Stopped left side");
+					MoveSpeed = 0f;
+				}
+			}
+			//else MoveSpeed = 9f;
 		}
 	}
 

@@ -22,7 +22,7 @@ public class UIDanger : MonoBehaviour
     void Update()
     {
         DangerImage.color = new Color(1f, 1f, 1f, opacity);
-        Debug.Log(thing.transform.position - player.transform.position);
+        //Debug.Log(thing.transform.position - player.transform.position);
 
         if (!(opacity > 1)) return;
         opacity = 1;
