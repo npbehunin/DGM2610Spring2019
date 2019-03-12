@@ -116,7 +116,7 @@
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Lazerbeam.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+              <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
               <folding>
                 <marker date="1552005022524" expanded="false" signature="6:247" ph="..." />
                 <marker date="1552005022524" expanded="true" signature="287:1396" ph="{...}" />
@@ -216,7 +216,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="100" />
     <option name="y" value="171" />
     <option name="width" value="1352" />
@@ -315,8 +315,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="100" y="171" width="1352" height="916" extended-state="1" />
-    <editor active="true" />
+    <frame x="100" y="171" width="1352" height="916" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Errors In Solution" order="3" />
@@ -791,7 +790,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Lazerbeam.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
           <folding>
             <marker date="1552005022524" expanded="false" signature="6:247" ph="..." />
             <marker date="1552005022524" expanded="true" signature="287:1396" ph="{...}" />
