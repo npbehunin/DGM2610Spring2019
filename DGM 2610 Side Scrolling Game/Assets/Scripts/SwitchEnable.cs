@@ -9,8 +9,20 @@ public class SwitchEnable : MonoBehaviour
 
 	void OnCollisionEnter(Collision col) 
 	{
-		if (col.gameObject.name == "Player")
+		if (col.gameObject.name == "Player" || col.gameObject.CompareTag("RollingRock")) 
 		{
+			if (Door.IsClosed)
+			{
+				Door.OpenDoor();
+			}
+		}
+	}
+
+	void OnTriggerEnter(Collider col)
+	{
+		if (col.gameObject.CompareTag("Lazerbeam"))
+		{
+			Debug.Log("HIT LAZER THING");
 			if (Door.IsClosed)
 			{
 				Door.OpenDoor();

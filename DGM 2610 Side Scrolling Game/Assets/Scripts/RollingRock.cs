@@ -39,7 +39,6 @@ public class RollingRock : MonoBehaviour
 		if (Physics.Raycast(transform.position, Vector3.left * transform.localScale.x, out hit, distance, playerMask))
 		{
 			rb.AddForce (rockmovement * speed);
-			Debug.Log(rockmovement);
 		}
 	}
 	

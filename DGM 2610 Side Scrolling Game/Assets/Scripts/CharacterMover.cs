@@ -12,10 +12,14 @@ public class CharacterMover : MonoBehaviour
 	
 	public Vector3 position;
 	private Vector3 rotation;
+
+	Rigidbody m_rb;
+	private RollingRock rollingrock;
 	
 	void Start ()
 	{
 		Controller = GetComponent<CharacterController>();
+		m_rb = rollingrock.GetComponent<Rigidbody>();
 	}
 	
 	void Update ()
@@ -41,7 +45,18 @@ public class CharacterMover : MonoBehaviour
 	{
 		if (other.gameObject.CompareTag("RollingRock"))
 		{
-			MoveSpeed = 5f;
+			MoveSpeed = 3f;
+		}
+	}
+
+	void OnCollisionStay(Collision other)
+	{
+		if (other.gameObject.CompareTag("RollingRock"))
+		{
+			if (MoveSpeed > 0)
+			{
+				MoveSpeed = 0f;
+			}
 		}
 	}
 

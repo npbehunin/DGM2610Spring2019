@@ -7,7 +7,7 @@ public class PlayerDeath : MonoBehaviour
 
 	void OnTriggerEnter(Collider col)
 	{
-		if (col.gameObject.CompareTag("Thing"))
+		if (col.gameObject.CompareTag("Thing") || col.gameObject.CompareTag("HazardRock"))
 		{
 			playerDeath();
 		}

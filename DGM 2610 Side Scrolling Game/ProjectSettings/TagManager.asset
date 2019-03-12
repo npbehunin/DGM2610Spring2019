@@ -8,6 +8,8 @@ TagManager:
   - Thing
   - Lazerbeam
   - ShootingArea
+  - HazardRock
+  - EnableThing
   layers:
   - Default
   - TransparentFX

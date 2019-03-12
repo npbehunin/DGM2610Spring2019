@@ -14,23 +14,29 @@ public class ThingMovement : MonoBehaviour {
 	public CharacterMover player;
 
 	private bool canBeShot;
+	public bool canMove;
 	
 	void Start ()
 	{
 		MoveSpeed = 9f;
 		canBeShot = true;
+		canMove = false;
 	}
 	
 	void LateUpdate () 
 	{
-		position.Set(MoveSpeed, 0, 0);
-		//position.Set(MoveSpeed, player.normalposition.y, 0);
-		transform.Translate(position * Time.deltaTime);
+		if (canMove)
+		{
+			position.Set(MoveSpeed, 0, 0);
+			//position.Set(MoveSpeed, player.normalposition.y, 0);
+			transform.Translate(position * Time.deltaTime);
 
-		playerPosition = new Vector3(transform.position.x, player.transform.position.y, transform.position.z) + offset;
-		Vector3 smoothedPosition = Vector3.Lerp(transform.position, playerPosition, smoothSpeed);
-		
-		transform.position = smoothedPosition;
+			playerPosition = new Vector3(transform.position.x, player.transform.position.y, transform.position.z) +
+			                 offset;
+			Vector3 smoothedPosition = Vector3.Lerp(transform.position, playerPosition, smoothSpeed);
+
+			transform.position = smoothedPosition;
+		}
 	}
 
 	void OnTriggerEnter(Collider other)
