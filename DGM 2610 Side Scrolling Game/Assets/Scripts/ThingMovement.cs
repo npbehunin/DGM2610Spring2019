@@ -13,7 +13,7 @@ public class ThingMovement : MonoBehaviour {
 
 	public CharacterMover player;
 
-	private bool canBeShot;
+	public bool canBeShot;
 	public bool canMove;
 	
 	void Start ()
@@ -58,7 +58,7 @@ public class ThingMovement : MonoBehaviour {
 		canBeShot = false;
 		yield return new WaitForSeconds(2);
 		canBeShot = true;
-		MoveSpeed = 10f;
+		MoveSpeed = 9f;
 	}
 	
 }

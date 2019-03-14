@@ -53,7 +53,7 @@ public class CharacterMover : MonoBehaviour
 		{
 			//if (Input.GetAxis("Horizontal") > 0)
 			{
-				MoveSpeed = 3f;
+				MoveSpeed = 7f;
 			}
 			//else MoveSpeed = 9f;
 		}
