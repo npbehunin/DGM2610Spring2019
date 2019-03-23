@@ -30,7 +30,7 @@ public class DoorOpen : MonoBehaviour
 	}
 	public void OpenDoor()
 	{
-		DoorCollider.isTrigger = true;
+		//DoorCollider.isTrigger = true;
 		MoveSpeed = 4.0f;
 	}
 

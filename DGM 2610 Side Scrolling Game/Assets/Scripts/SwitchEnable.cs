@@ -5,27 +5,33 @@ using UnityEngine;
 
 public class SwitchEnable : MonoBehaviour
 {
+	private Animator anim;
 	public DoorOpen Door;
 
-	void OnCollisionEnter(Collision col) 
+	void Start()
 	{
-		if (col.gameObject.name == "Player" || col.gameObject.CompareTag("RollingRock")) 
-		{
-			if (Door.IsClosed)
-			{
-				Door.OpenDoor();
-			}
-		}
+		anim = gameObject.GetComponent<Animator>();
 	}
+	//void OnCollisionEnter(Collision col) 
+	//{
+		//if (col.gameObject.name == "Player" || col.gameObject.CompareTag("RollingRock")) 
+		//{
+			//if (Door.IsClosed)
+			//{
+			//	Door.OpenDoor();
+			//	anim.SetBool("EnableSwitch", true);
+			//}
+		//}
+	//}
 
 	void OnTriggerEnter(Collider col)
 	{
-		if (col.gameObject.CompareTag("Lazerbeam"))
+		if (col.gameObject.CompareTag("Lazerbeam") || col.gameObject.name == "Player" || col.gameObject.CompareTag("RollingRock"))
 		{
-			Debug.Log("HIT LAZER THING");
 			if (Door.IsClosed)
 			{
 				Door.OpenDoor();
+				anim.SetBool("EnableSwitch", true);
 			}
 		}
 	}
