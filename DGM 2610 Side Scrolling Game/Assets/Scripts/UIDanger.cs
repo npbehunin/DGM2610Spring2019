@@ -9,6 +9,7 @@ public class UIDanger : MonoBehaviour
 
     private float opacity;
     private float distance;
+    private float frac;
 
     public GameObject thing;
     public GameObject player;
@@ -24,17 +25,15 @@ public class UIDanger : MonoBehaviour
     {
         DangerImage.color = new Color(1f, 1f, 1f, opacity);
         distance = (thing.transform.position.x - player.transform.position.x);
-        Debug.Log(distance);
 
-        if (!(opacity < 1)) return;
-        opacity = 1;
-
-        if (!(opacity > 0)) return;
-        opacity = 0;
-
-        if (distance > -30f)
+        if (distance > -40)
         {
-            
+            for (var i = 0; i > distance; i--)
+            {
+                frac = (distance / -40f);
+                opacity = 1f / frac - 1f;
+                Debug.Log(opacity);
+            }
         }
     }
 }
