@@ -6,6 +6,7 @@ public class EnableGiantRock : MonoBehaviour
 {
     private Rigidbody rb;
     public GameObject rock;
+    public CustomGravity gravity;
     
     void Start()
     {
@@ -15,8 +16,10 @@ public class EnableGiantRock : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.CompareTag("GiantRockTrigger"))
+        if (col.gameObject.CompareTag("Player"))
         {
+            Debug.Log("Triggered");
+            gravity.gravityenabled = true;
             rb.isKinematic = false;
         }
     }

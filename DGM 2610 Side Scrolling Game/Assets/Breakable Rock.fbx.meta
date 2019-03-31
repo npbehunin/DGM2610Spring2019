@@ -1,0 +1,236 @@
+fileFormatVersion: 2
+guid: e4584a3267a188e4098002f9c0470b5e
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: group
+    100004: group1
+    100006: group2
+    100008: pasted__pCube18
+    100010: pasted__pCube18 1
+    100012: pasted__pCube19
+    100014: pasted__pCube19 1
+    100016: pasted__pCube25
+    100018: pasted__pCube25 1
+    100020: pasted__pCube26
+    100022: pasted__pCube26 1
+    100024: pasted__pCube27
+    100026: pasted__pCube27 1
+    100028: pasted__pCube28
+    100030: pasted__pCube28 1
+    100032: pasted__pCube29
+    100034: pasted__pCube29 1
+    100036: pasted__pCube31
+    100038: pasted__pCube31 1
+    100040: pasted__pCube32
+    100042: pasted__pCube32 1
+    100044: pasted__pCube33
+    100046: pasted__pCube33 1
+    100048: pasted__polySurface62
+    100050: pasted__polySurface63
+    100052: pasted__polySurface66
+    100054: pasted__polySurface67
+    100056: pasted__polySurface68
+    100058: pasted__transform100
+    100060: pasted__transform100 1
+    100062: pasted__transform76
+    100064: pasted__transform76 1
+    100066: pasted__transform77
+    100068: pasted__transform77 1
+    100070: pasted__transform78
+    100072: pasted__transform78 1
+    100074: pasted__transform79
+    100076: pasted__transform79 1
+    100078: pasted__transform80
+    100080: pasted__transform80 1
+    100082: pasted__transform81
+    100084: pasted__transform81 1
+    100086: pasted__transform82
+    100088: pasted__transform82 1
+    100090: pasted__transform83
+    100092: pasted__transform83 1
+    100094: pasted__transform84
+    100096: pasted__transform84 1
+    100098: polySurface18
+    100100: polySurface8
+    100102: pPlane4
+    100104: pPlane5
+    100106: pPlane7
+    100108: shard1
+    100110: shard2
+    100112: shard3
+    100114: shard4
+    100116: shard5
+    100118: solidShatter1
+    100120: transform1
+    100122: transform2
+    100124: transform3
+    100126: transform4
+    100128: transform5
+    100130: transform6
+    400000: //RootNode
+    400002: group
+    400004: group1
+    400006: group2
+    400008: pasted__pCube18
+    400010: pasted__pCube18 1
+    400012: pasted__pCube19
+    400014: pasted__pCube19 1
+    400016: pasted__pCube25
+    400018: pasted__pCube25 1
+    400020: pasted__pCube26
+    400022: pasted__pCube26 1
+    400024: pasted__pCube27
+    400026: pasted__pCube27 1
+    400028: pasted__pCube28
+    400030: pasted__pCube28 1
+    400032: pasted__pCube29
+    400034: pasted__pCube29 1
+    400036: pasted__pCube31
+    400038: pasted__pCube31 1
+    400040: pasted__pCube32
+    400042: pasted__pCube32 1
+    400044: pasted__pCube33
+    400046: pasted__pCube33 1
+    400048: pasted__polySurface62
+    400050: pasted__polySurface63
+    400052: pasted__polySurface66
+    400054: pasted__polySurface67
+    400056: pasted__polySurface68
+    400058: pasted__transform100
+    400060: pasted__transform100 1
+    400062: pasted__transform76
+    400064: pasted__transform76 1
+    400066: pasted__transform77
+    400068: pasted__transform77 1
+    400070: pasted__transform78
+    400072: pasted__transform78 1
+    400074: pasted__transform79
+    400076: pasted__transform79 1
+    400078: pasted__transform80
+    400080: pasted__transform80 1
+    400082: pasted__transform81
+    400084: pasted__transform81 1
+    400086: pasted__transform82
+    400088: pasted__transform82 1
+    400090: pasted__transform83
+    400092: pasted__transform83 1
+    400094: pasted__transform84
+    400096: pasted__transform84 1
+    400098: polySurface18
+    400100: polySurface8
+    400102: pPlane4
+    400104: pPlane5
+    400106: pPlane7
+    400108: shard1
+    400110: shard2
+    400112: shard3
+    400114: shard4
+    400116: shard5
+    400118: solidShatter1
+    400120: transform1
+    400122: transform2
+    400124: transform3
+    400126: transform4
+    400128: transform5
+    400130: transform6
+    2100000: object_rolling_rock
+    2300000: shard1
+    2300002: shard2
+    2300004: shard3
+    2300006: shard4
+    2300008: shard5
+    3300000: shard1
+    3300002: shard2
+    3300004: shard3
+    3300006: shard4
+    3300008: shard5
+    4300000: shard1
+    4300002: shard2
+    4300004: shard3
+    4300006: shard4
+    4300008: shard5
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
