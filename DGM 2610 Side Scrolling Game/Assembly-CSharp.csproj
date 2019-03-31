@@ -77,6 +77,9 @@
     <Compile Include="Assets\Scripts\UIDanger.cs" />
     <Compile Include="Assets\Scripts\Updating.cs" />
     <None Include="Assets\Scripts\Working Rolling Rock Backup.txt" />
+    <Reference Include="UnityEditor.StandardEvents">
+      <HintPath>C:/Users/npbeh/Documents/UVU/Spring 2019/DGM2610Spring2019/DGM2610Spring2019/DGM 2610 Side Scrolling Game/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/npbeh/Documents/UVU/Spring 2019/DGM2610Spring2019/DGM2610Spring2019/DGM 2610 Side Scrolling Game/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -85,9 +88,6 @@
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:/Users/npbeh/Documents/UVU/Spring 2019/DGM2610Spring2019/DGM2610Spring2019/DGM 2610 Side Scrolling Game/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/npbeh/Documents/UVU/Spring 2019/DGM2610Spring2019/DGM2610Spring2019/DGM 2610 Side Scrolling Game/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
