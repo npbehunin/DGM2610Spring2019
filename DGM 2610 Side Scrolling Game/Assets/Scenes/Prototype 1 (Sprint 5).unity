@@ -3186,6 +3186,7 @@ MonoBehaviour:
   MoveSpeed: 3
   IsClosed: 0
   IsTrapDoor: 0
+  BigMove: 0
 --- !u!65 &77361316
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7845,7 +7846,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4191889793564844, guid: e214800064074434d8faffbb0d99fa0f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 6.2
+      value: 6.4
       objectReference: {fileID: 0}
     - target: {fileID: 4191889793564844, guid: e214800064074434d8faffbb0d99fa0f, type: 2}
       propertyPath: m_LocalPosition.z
@@ -16099,6 +16100,7 @@ MonoBehaviour:
   MoveSpeed: 3
   IsClosed: 0
   IsTrapDoor: 0
+  BigMove: 0
 --- !u!1001 &436410045
 Prefab:
   m_ObjectHideFlags: 0
@@ -31153,7 +31155,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 720311905}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 296.12, y: -3.65, z: -10.3626585}
+  m_LocalPosition: {x: 296.12, y: -3.87, z: -10.3626585}
   m_LocalScale: {x: 1.9838506, y: 0.61754, z: 1.8377}
   m_Children: []
   m_Father: {fileID: 1425729178}
@@ -36177,7 +36179,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 884060916}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 369.83, y: -5.75, z: -9.97}
+  m_LocalPosition: {x: 368.45, y: -5.75, z: -9.97}
   m_LocalScale: {x: 8.02905, y: 0.48703, z: 2.48815}
   m_Children:
   - {fileID: 1553393726}
@@ -36198,6 +36200,7 @@ MonoBehaviour:
   MoveSpeed: 3
   IsClosed: 0
   IsTrapDoor: 1
+  BigMove: 1
 --- !u!65 &884060919
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43516,6 +43519,7 @@ MonoBehaviour:
   MoveSpeed: 3
   IsClosed: 0
   IsTrapDoor: 0
+  BigMove: 0
 --- !u!1001 &1121487957
 Prefab:
   m_ObjectHideFlags: 0
@@ -47410,7 +47414,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1249032804}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -250.2, y: 2.58, z: -0.042673945}
+  m_LocalPosition: {x: -253.02, y: 2.38, z: -0.042673945}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -51329,6 +51333,7 @@ MonoBehaviour:
   MoveSpeed: 3
   IsClosed: 0
   IsTrapDoor: 1
+  BigMove: 1
 --- !u!65 &1373129131
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51390,7 +51395,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1373129129}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 286.32, y: 9.59, z: -9.97}
+  m_LocalPosition: {x: 286.25, y: 9.929998, z: -9.97}
   m_LocalScale: {x: 8.029054, y: 0.487026, z: 2.4881527}
   m_Children:
   - {fileID: 566313835}
@@ -54829,8 +54834,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1459242318}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -440.771, y: -9.025999, z: 0.10699999}
-  m_LocalScale: {x: 1, y: 7.217187, z: 3.6786}
+  m_LocalPosition: {x: -458.44, y: -4.41, z: 0.10699999}
+  m_LocalScale: {x: 5.7467, y: 23.005505, z: 3.6786}
   m_Children: []
   m_Father: {fileID: 1308143245}
   m_RootOrder: 11
@@ -68774,7 +68779,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1915371258}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -356.9, y: 6.82, z: -0.03}
+  m_LocalPosition: {x: -301.6, y: 6.82, z: -0.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -70594,11 +70599,11 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
+  m_ReferenceResolution: {x: 1280, y: 720}
+  m_ScreenMatchMode: 2
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -72250,6 +72255,7 @@ MonoBehaviour:
   MoveSpeed: 3
   IsClosed: 0
   IsTrapDoor: 1
+  BigMove: 0
 --- !u!65 &2064046972
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -17,6 +17,7 @@ public class DoorOpen : MonoBehaviour
 	
 	public bool IsClosed;
 	public bool IsTrapDoor;
+	public bool BigMove;
 
 	void Start()
 	{
@@ -24,9 +25,18 @@ public class DoorOpen : MonoBehaviour
 		MoveSpeed = 0.0f;
 		DoorCollider = GetComponent<Collider>();
 		DoorCollider.isTrigger = false;
-		
-		maxyPos = transform.position.y + 5f;
-		maxxPos = transform.position.x + 5f;
+
+		if (BigMove)
+		{
+			maxyPos = transform.position.y + 8f;
+			maxxPos = transform.position.x + 8f;
+			Debug.Log("Beeg");
+		}
+		else
+		{
+			maxyPos = transform.position.y + 5f;
+			maxxPos = transform.position.x + 5f;
+		}
 	}
 	public void OpenDoor()
 	{
