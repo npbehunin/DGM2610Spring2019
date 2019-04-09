@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Prototype 1 (Sprint 5).unity
+- path: Assets/Scenes/Prototype 1 (Sprint 6)(Class).unity
   isLoaded: 1
   isActive: 1

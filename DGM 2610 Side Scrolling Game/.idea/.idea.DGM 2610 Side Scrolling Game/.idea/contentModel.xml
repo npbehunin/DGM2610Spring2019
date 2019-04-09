@@ -9,6 +9,7 @@
           <e p="CameraFollowPlayer.cs" t="Include" />
           <e p="CharacterMover.cs" t="Include" />
           <e p="CMON.cs" t="Include" />
+          <e p="Collectable.cs" t="Include" />
           <e p="CustomGravity.cs" t="Include" />
           <e p="DoorOpen.cs" t="Include" />
           <e p="EnableGiantRock.cs" t="Include" />

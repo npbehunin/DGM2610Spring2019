@@ -56,7 +56,6 @@
               <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
               <folding>
                 <marker date="1554252733456" expanded="false" signature="6:234" ph="..." />
-                <marker date="1554252733456" expanded="true" signature="273:1417" ph="{...}" />
                 <marker date="1554252733456" expanded="true" signature="469:812" ph="{...}" />
                 <marker date="1554252733456" expanded="true" signature="604:714" ph="{...}" />
                 <marker date="1554252733456" expanded="true" signature="721:809" ph="{...}" />
@@ -70,10 +69,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RockForEnemy.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RockForEnemy.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/RockForEnemy.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-525">
+            <state relative-caret-position="90">
               <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="33" />
               <folding>
                 <marker date="1552527457338" expanded="false" signature="6:78" ph="..." />
@@ -87,7 +86,22 @@
                 <marker date="1552527457338" expanded="true" signature="760:962" ph="{...}" />
                 <marker date="1552527457338" expanded="true" signature="988:1134" ph="{...}" />
                 <marker date="1552527457338" expanded="true" signature="1160:1305" ph="{...}" />
-                <marker date="1552527457338" expanded="true" signature="1309:1387" ph="/* rb.isKinematic = true; // Deactivated ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Collectable.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Collectable.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="21" column="81" selection-start-line="21" selection-start-column="81" selection-end-line="21" selection-end-column="81" />
+              <folding>
+                <marker date="1554769223086" expanded="false" signature="6:78" ph="..." />
+                <marker date="1554769223086" expanded="true" signature="120:514" ph="{...}" />
+                <marker date="1554769223086" expanded="true" signature="225:301" ph="{...}" />
+                <marker date="1554769223086" expanded="true" signature="337:512" ph="{...}" />
+                <marker date="1554769223086" expanded="true" signature="383:509" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -204,6 +218,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMover.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerDeath.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnableGiantRock.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Collectable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CustomGravity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lazerbeam.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ShootingMechanic.cs" root0="FORCE_HIGHLIGHTING" />
@@ -237,6 +252,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/BreakablePieces.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RockDamage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DoorOpen.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Collectable.cs" />
       </list>
     </option>
   </component>
@@ -360,7 +376,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23993808" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24380805" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unity" order="14" />
       <window_info anchor="right" id="Database" order="5" />
@@ -384,25 +400,25 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Unity" order="14" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21585557" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Unit Tests" order="10" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="13" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="right" id="Unit Tests Coverage" order="4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -737,7 +753,6 @@
           <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
           <folding>
             <marker date="1554252733456" expanded="false" signature="6:234" ph="..." />
-            <marker date="1554252733456" expanded="true" signature="273:1417" ph="{...}" />
             <marker date="1554252733456" expanded="true" signature="469:812" ph="{...}" />
             <marker date="1554252733456" expanded="true" signature="604:714" ph="{...}" />
             <marker date="1554252733456" expanded="true" signature="721:809" ph="{...}" />
@@ -752,7 +767,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/RockForEnemy.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-525">
+        <state relative-caret-position="90">
           <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="33" />
           <folding>
             <marker date="1552527457338" expanded="false" signature="6:78" ph="..." />
@@ -766,7 +781,6 @@
             <marker date="1552527457338" expanded="true" signature="760:962" ph="{...}" />
             <marker date="1552527457338" expanded="true" signature="988:1134" ph="{...}" />
             <marker date="1552527457338" expanded="true" signature="1160:1305" ph="{...}" />
-            <marker date="1552527457338" expanded="true" signature="1309:1387" ph="/* rb.isKinematic = true; // Deactivated ... */" />
           </folding>
         </state>
       </provider>
