@@ -18,7 +18,7 @@ public class ThingMovement : MonoBehaviour {
 	
 	void Start ()
 	{
-		MoveSpeed = 9f;
+		MoveSpeed = 10f;
 		canBeShot = true;
 		canMove = false;
 	}
@@ -45,7 +45,7 @@ public class ThingMovement : MonoBehaviour {
 		{
 			if (canBeShot)
 			{
-				MoveSpeed = 6f;
+				MoveSpeed = 8f;
 				Debug.Log("HIT");
 				Destroy(other);
 				StartCoroutine(Invincibility());
@@ -58,7 +58,7 @@ public class ThingMovement : MonoBehaviour {
 		canBeShot = false;
 		yield return new WaitForSeconds(2);
 		canBeShot = true;
-		MoveSpeed = 9f;
+		MoveSpeed = 10f;
 	}
 	
 }
