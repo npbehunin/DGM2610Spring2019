@@ -47,7 +47,7 @@ public class RockForEnemy : MonoBehaviour
 	IEnumerator EnemyDamage()
 	{
 		HitDirect = true;
-		yield return new WaitForSeconds(3);
+		yield return new WaitForSeconds(4);
 		HitDirect = false;
 		HitLong = true;
 		//Two seconds after falling, the rock can stun the enemy. After that, it will only slow it down.
@@ -57,7 +57,7 @@ public class RockForEnemy : MonoBehaviour
 	{
 		thing.canMove = false;
 		thing.canBeShot = false;
-		yield return new WaitForSeconds(7);
+		yield return new WaitForSeconds(3);
 		thing.canMove = true;
 		thing.canBeShot = true;
 	}
@@ -66,7 +66,7 @@ public class RockForEnemy : MonoBehaviour
 	{
 		thing.MoveSpeed = 6f;
 		thing.canBeShot = false;
-		yield return new WaitForSeconds(5);
+		yield return new WaitForSeconds(3);
 		thing.MoveSpeed = 9f;
 		thing.canBeShot = true;
 	}

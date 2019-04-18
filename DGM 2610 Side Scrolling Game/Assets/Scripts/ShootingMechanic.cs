@@ -9,8 +9,12 @@ public class ShootingMechanic : MonoBehaviour
 
 	public GameObject lazer;
 	public CharacterMover player;
+	public Animator animator;
 
-	void Start () {
+	public bool HasLazergun;
+
+	void Start () 
+	{
 		
 	}
 	
@@ -19,8 +23,22 @@ public class ShootingMechanic : MonoBehaviour
 		{
 			if (Input.GetMouseButtonDown(0))
 			{
-				GameObject obj = Instantiate(lazer, player.transform.position, Quaternion.identity);
+				if (HasLazergun)
+				{
+					GameObject obj = Instantiate(lazer, player.transform.position, Quaternion.identity);
+					StartCoroutine(SetAnim());
+				}
 			}
 		}
+		
+	}
+
+	private IEnumerator SetAnim()
+	{
+		animator.SetBool("Shooting", true);
+		animator.SetBool("Idle", false);
+		yield return new WaitForSeconds(.05f);
+		animator.SetBool("Shooting", false);
+		animator.SetBool("Idle", false);
 	}
 }

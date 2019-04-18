@@ -5,10 +5,15 @@ using UnityEngine;
 public class Collectable : MonoBehaviour
 {
 
-	public bool islazergun;
 	public ParticleSystem system;
+	public Counter counter;
 
 	private Vector3 rotation;
+	
+	public bool IsCollectable;
+	public bool IsLazergun;
+	public ShootingMechanic sh;
+	public GameObject gun;
 
 	void Update () 
 	{
@@ -19,8 +24,21 @@ public class Collectable : MonoBehaviour
 	{
 		if (col.gameObject.CompareTag("Player"))
 		{
+			if (IsCollectable)
+			{
+				counter.count++;
+			}
+
+			if (IsLazergun)
+			{
+				gun.SetActive(true);
+				sh.HasLazergun = true;
+			}
+			
+
 			Instantiate(system, transform.position, Quaternion.Euler(-90, 0, 0));
 			//system.Emit(1);
+				
 			Destroy(gameObject);
 		}
 	}

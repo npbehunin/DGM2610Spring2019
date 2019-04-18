@@ -56,7 +56,7 @@ public class ThingMovement : MonoBehaviour {
 	IEnumerator Invincibility()
 	{
 		canBeShot = false;
-		yield return new WaitForSeconds(2);
+		yield return new WaitForSeconds(4);
 		canBeShot = true;
 		MoveSpeed = 10f;
 	}

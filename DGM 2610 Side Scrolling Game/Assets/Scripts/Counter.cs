@@ -9,18 +9,26 @@ public class Counter : MonoBehaviour
 
     public Image image;
     public Sprite[] sprites;
+    public int count;
 
     void Start()
     {
-        image = gameObject.GetComponent<Image>();
-        for (int i = 0; i < sprites.Length; i++)
-        {
-            int index = Array.IndexOf(sprites, i);
-            Debug.Log(index);
-        }
+        //image = gameObject.GetComponent<Image>();
     }
 
-   // private void AddNumber;
+    void Update()
+    {
+            image.sprite = sprites[count];
+            if (count > sprites.Length - 1)
+            {
+                count = sprites.Length - 1;
+            }
+    }
+
+
+
+
+// private void AddNumber;
     //{
         
    // }

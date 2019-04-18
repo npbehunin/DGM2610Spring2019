@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\10672633\.Rider2018.1\system\resharper-host\Local\Transient\ReSharperHost\v12\SolutionCaches\_DGM 2610 Side Scrolling Game.-2125735688.00" t="ExcludeRecursive" />
-    <e p="C:\Users\10672633\Documents\Nathan Behunin\DGM2610Spring2019\DGM 2610 Side Scrolling Game" t="IncludeRecursive">
+    <e p="C:\Users\npbeh\.Rider2018.1\system\resharper-host\Local\Transient\ReSharperHost\v12\SolutionCaches\_DGM 2610 Side Scrolling Game.170844669.00" t="ExcludeRecursive" />
+    <e p="C:\Users\npbeh\Documents\UVU\Spring 2019\DGM2610Spring2019\DGM2610Spring2019\DGM 2610 Side Scrolling Game" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
@@ -18,6 +18,7 @@
           <e p="GameStartSettings.cs" t="Include" />
           <e p="Lazerbeam.cs" t="Include" />
           <e p="LightBlink.cs" t="Include" />
+          <e p="MirrorAnimation.cs" t="Include" />
           <e p="PlayerDeath.cs" t="Include" />
           <e p="RBCharacterMover.cs" t="Include" />
           <e p="RockDamage.cs" t="Include" />
