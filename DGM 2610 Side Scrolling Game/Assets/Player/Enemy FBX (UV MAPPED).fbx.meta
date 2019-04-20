@@ -1,0 +1,339 @@
+fileFormatVersion: 2
+guid: fefe22cd28e70424fb7833cdac9df581
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Neck_Ctrl_Grp
+    100004: Neck_Ctrl_Grp2
+    100006: Neck_Jnt
+    100008: pCylinder14
+    100010: pCylinder15
+    100012: pCylinder16
+    100014: pCylinder17
+    100016: pCylinder18
+    100018: pCylinder19
+    100020: pCylinder20
+    100022: pCylinder21
+    100024: polySurface8
+    100026: Root_Ctrl
+    100028: Root_Ctrl_Grp
+    100030: Root_Jnt
+    100032: Tentacle_Ctrl_1
+    100034: Tentacle_Ctrl_1 1
+    100036: Tentacle_Ctrl_1 2
+    100038: Tentacle_Ctrl_1 3
+    100040: Tentacle_Ctrl_1 4
+    100042: Tentacle_Ctrl_1 5
+    100044: Tentacle_Ctrl_1 6
+    100046: Tentacle_Ctrl_1 7
+    100048: Tentacle_Ctrl_2
+    100050: Tentacle_Ctrl_2 1
+    100052: Tentacle_Ctrl_2 2
+    100054: Tentacle_Ctrl_2 3
+    100056: Tentacle_Ctrl_2 4
+    100058: Tentacle_Ctrl_2 5
+    100060: Tentacle_Ctrl_2 6
+    100062: Tentacle_Ctrl_2 7
+    100064: Tentacle_Ctrl_3
+    100066: Tentacle_Ctrl_3 1
+    100068: Tentacle_Ctrl_3 2
+    100070: Tentacle_Ctrl_3 3
+    100072: Tentacle_Ctrl_3 4
+    100074: Tentacle_Ctrl_3 5
+    100076: Tentacle_Ctrl_3 6
+    100078: Tentacle_Ctrl_3 7
+    100080: Tentacle_Ctrl_4
+    100082: Tentacle_Ctrl_4 1
+    100084: Tentacle_Ctrl_4 2
+    100086: Tentacle_Ctrl_4 3
+    100088: Tentacle_Ctrl_4 4
+    100090: Tentacle_Ctrl_4 5
+    100092: Tentacle_Ctrl_4 6
+    100094: Tentacle_Ctrl_4 7
+    100096: Tentacle_Ctrl_Grp_1
+    100098: Tentacle_Ctrl_Grp_12
+    100100: Tentacle_Ctrl_Grp_13
+    100102: Tentacle_Ctrl_Grp_14
+    100104: Tentacle_Ctrl_Grp_15
+    100106: Tentacle_Ctrl_Grp_16
+    100108: Tentacle_Ctrl_Grp_17
+    100110: Tentacle_Ctrl_Grp_18
+    100112: Tentacle_Ctrl_Grp_2
+    100114: Tentacle_Ctrl_Grp_2 1
+    100116: Tentacle_Ctrl_Grp_2 2
+    100118: Tentacle_Ctrl_Grp_2 3
+    100120: Tentacle_Ctrl_Grp_2 4
+    100122: Tentacle_Ctrl_Grp_2 5
+    100124: Tentacle_Ctrl_Grp_2 6
+    100126: Tentacle_Ctrl_Grp_2 7
+    100128: Tentacle_Ctrl_Grp_3
+    100130: Tentacle_Ctrl_Grp_3 1
+    100132: Tentacle_Ctrl_Grp_3 2
+    100134: Tentacle_Ctrl_Grp_3 3
+    100136: Tentacle_Ctrl_Grp_3 4
+    100138: Tentacle_Ctrl_Grp_3 5
+    100140: Tentacle_Ctrl_Grp_3 6
+    100142: Tentacle_Ctrl_Grp_3 7
+    100144: Tentacle_Ctrl_Grp_4
+    100146: Tentacle_Ctrl_Grp_4 1
+    100148: Tentacle_Ctrl_Grp_4 2
+    100150: Tentacle_Ctrl_Grp_4 3
+    100152: Tentacle_Ctrl_Grp_4 4
+    100154: Tentacle_Ctrl_Grp_4 5
+    100156: Tentacle_Ctrl_Grp_4 6
+    100158: Tentacle_Ctrl_Grp_4 7
+    100160: Tentacle_Jnt_1
+    100162: Tentacle_Jnt_10
+    100164: Tentacle_Jnt_12
+    100166: Tentacle_Jnt_2
+    100168: Tentacle_Jnt_2 1
+    100170: Tentacle_Jnt_2 2
+    100172: Tentacle_Jnt_2 3
+    100174: Tentacle_Jnt_2 4
+    100176: Tentacle_Jnt_2 5
+    100178: Tentacle_Jnt_2 6
+    100180: Tentacle_Jnt_2 7
+    100182: Tentacle_Jnt_3
+    100184: Tentacle_Jnt_3 1
+    100186: Tentacle_Jnt_3 2
+    100188: Tentacle_Jnt_3 3
+    100190: Tentacle_Jnt_3 4
+    100192: Tentacle_Jnt_3 5
+    100194: Tentacle_Jnt_3 6
+    100196: Tentacle_Jnt_3 7
+    100198: Tentacle_Jnt_4
+    100200: Tentacle_Jnt_4 1
+    100202: Tentacle_Jnt_4 2
+    100204: Tentacle_Jnt_4 3
+    100206: Tentacle_Jnt_4 4
+    100208: Tentacle_Jnt_4 5
+    100210: Tentacle_Jnt_4 6
+    100212: Tentacle_Jnt_4 7
+    100214: Tentacle_Jnt_5
+    100216: Tentacle_Jnt_6
+    100218: Tentacle_Jnt_7
+    100220: Tentacle_Jnt_8
+    100222: Tentacle_Jnt_9
+    100224: Waist_Ctrl
+    100226: Waist_Ctrl_Grp1
+    100228: Waist_Jnt
+    400000: //RootNode
+    400002: Neck_Ctrl_Grp
+    400004: Neck_Ctrl_Grp2
+    400006: Neck_Jnt
+    400008: pCylinder14
+    400010: pCylinder15
+    400012: pCylinder16
+    400014: pCylinder17
+    400016: pCylinder18
+    400018: pCylinder19
+    400020: pCylinder20
+    400022: pCylinder21
+    400024: polySurface8
+    400026: Root_Ctrl
+    400028: Root_Ctrl_Grp
+    400030: Root_Jnt
+    400032: Tentacle_Ctrl_1
+    400034: Tentacle_Ctrl_1 1
+    400036: Tentacle_Ctrl_1 2
+    400038: Tentacle_Ctrl_1 3
+    400040: Tentacle_Ctrl_1 4
+    400042: Tentacle_Ctrl_1 5
+    400044: Tentacle_Ctrl_1 6
+    400046: Tentacle_Ctrl_1 7
+    400048: Tentacle_Ctrl_2
+    400050: Tentacle_Ctrl_2 1
+    400052: Tentacle_Ctrl_2 2
+    400054: Tentacle_Ctrl_2 3
+    400056: Tentacle_Ctrl_2 4
+    400058: Tentacle_Ctrl_2 5
+    400060: Tentacle_Ctrl_2 6
+    400062: Tentacle_Ctrl_2 7
+    400064: Tentacle_Ctrl_3
+    400066: Tentacle_Ctrl_3 1
+    400068: Tentacle_Ctrl_3 2
+    400070: Tentacle_Ctrl_3 3
+    400072: Tentacle_Ctrl_3 4
+    400074: Tentacle_Ctrl_3 5
+    400076: Tentacle_Ctrl_3 6
+    400078: Tentacle_Ctrl_3 7
+    400080: Tentacle_Ctrl_4
+    400082: Tentacle_Ctrl_4 1
+    400084: Tentacle_Ctrl_4 2
+    400086: Tentacle_Ctrl_4 3
+    400088: Tentacle_Ctrl_4 4
+    400090: Tentacle_Ctrl_4 5
+    400092: Tentacle_Ctrl_4 6
+    400094: Tentacle_Ctrl_4 7
+    400096: Tentacle_Ctrl_Grp_1
+    400098: Tentacle_Ctrl_Grp_12
+    400100: Tentacle_Ctrl_Grp_13
+    400102: Tentacle_Ctrl_Grp_14
+    400104: Tentacle_Ctrl_Grp_15
+    400106: Tentacle_Ctrl_Grp_16
+    400108: Tentacle_Ctrl_Grp_17
+    400110: Tentacle_Ctrl_Grp_18
+    400112: Tentacle_Ctrl_Grp_2
+    400114: Tentacle_Ctrl_Grp_2 1
+    400116: Tentacle_Ctrl_Grp_2 2
+    400118: Tentacle_Ctrl_Grp_2 3
+    400120: Tentacle_Ctrl_Grp_2 4
+    400122: Tentacle_Ctrl_Grp_2 5
+    400124: Tentacle_Ctrl_Grp_2 6
+    400126: Tentacle_Ctrl_Grp_2 7
+    400128: Tentacle_Ctrl_Grp_3
+    400130: Tentacle_Ctrl_Grp_3 1
+    400132: Tentacle_Ctrl_Grp_3 2
+    400134: Tentacle_Ctrl_Grp_3 3
+    400136: Tentacle_Ctrl_Grp_3 4
+    400138: Tentacle_Ctrl_Grp_3 5
+    400140: Tentacle_Ctrl_Grp_3 6
+    400142: Tentacle_Ctrl_Grp_3 7
+    400144: Tentacle_Ctrl_Grp_4
+    400146: Tentacle_Ctrl_Grp_4 1
+    400148: Tentacle_Ctrl_Grp_4 2
+    400150: Tentacle_Ctrl_Grp_4 3
+    400152: Tentacle_Ctrl_Grp_4 4
+    400154: Tentacle_Ctrl_Grp_4 5
+    400156: Tentacle_Ctrl_Grp_4 6
+    400158: Tentacle_Ctrl_Grp_4 7
+    400160: Tentacle_Jnt_1
+    400162: Tentacle_Jnt_10
+    400164: Tentacle_Jnt_12
+    400166: Tentacle_Jnt_2
+    400168: Tentacle_Jnt_2 1
+    400170: Tentacle_Jnt_2 2
+    400172: Tentacle_Jnt_2 3
+    400174: Tentacle_Jnt_2 4
+    400176: Tentacle_Jnt_2 5
+    400178: Tentacle_Jnt_2 6
+    400180: Tentacle_Jnt_2 7
+    400182: Tentacle_Jnt_3
+    400184: Tentacle_Jnt_3 1
+    400186: Tentacle_Jnt_3 2
+    400188: Tentacle_Jnt_3 3
+    400190: Tentacle_Jnt_3 4
+    400192: Tentacle_Jnt_3 5
+    400194: Tentacle_Jnt_3 6
+    400196: Tentacle_Jnt_3 7
+    400198: Tentacle_Jnt_4
+    400200: Tentacle_Jnt_4 1
+    400202: Tentacle_Jnt_4 2
+    400204: Tentacle_Jnt_4 3
+    400206: Tentacle_Jnt_4 4
+    400208: Tentacle_Jnt_4 5
+    400210: Tentacle_Jnt_4 6
+    400212: Tentacle_Jnt_4 7
+    400214: Tentacle_Jnt_5
+    400216: Tentacle_Jnt_6
+    400218: Tentacle_Jnt_7
+    400220: Tentacle_Jnt_8
+    400222: Tentacle_Jnt_9
+    400224: Waist_Ctrl
+    400226: Waist_Ctrl_Grp1
+    400228: Waist_Jnt
+    2100000: lambert1
+    4300000: polySurface8
+    4300002: pCylinder14
+    4300004: pCylinder15
+    4300006: pCylinder16
+    4300008: pCylinder17
+    4300010: pCylinder18
+    4300012: pCylinder19
+    4300014: pCylinder20
+    4300016: pCylinder21
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: pCylinder14
+    13700002: pCylinder15
+    13700004: pCylinder16
+    13700006: pCylinder17
+    13700008: pCylinder18
+    13700010: pCylinder19
+    13700012: pCylinder20
+    13700014: pCylinder21
+    13700016: polySurface8
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
