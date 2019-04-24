@@ -56,6 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\CameraFollowPlayer.cs" />
+    <Compile Include="Assets\Scripts\CanvasSettings.cs" />
     <Compile Include="Assets\Scripts\CharacterMover.cs" />
     <Compile Include="Assets\Scripts\CMON.cs" />
     <Compile Include="Assets\Scripts\Collectable.cs" />
@@ -63,6 +64,7 @@
     <Compile Include="Assets\Scripts\CustomGravity.cs" />
     <Compile Include="Assets\Scripts\DoorOpen.cs" />
     <Compile Include="Assets\Scripts\EnableGiantRock.cs" />
+    <Compile Include="Assets\Scripts\EndGame.cs" />
     <Compile Include="Assets\Scripts\floatData.cs" />
     <Compile Include="Assets\Scripts\GameStartSettings.cs" />
     <Compile Include="Assets\Scripts\Lazerbeam.cs" />

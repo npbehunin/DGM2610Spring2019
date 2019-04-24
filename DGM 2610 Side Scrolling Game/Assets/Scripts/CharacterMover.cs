@@ -23,6 +23,7 @@ public class CharacterMover : MonoBehaviour
 	
 	Rigidbody m_rb;
 	private RollingRock rollingrock;
+	public GameObject endofgame;
 
 	private float distance = -1.3f;
 	private int rockmask = 1 << 9;
@@ -114,6 +115,11 @@ public class CharacterMover : MonoBehaviour
 			animator.SetBool("Idle", false);
 		}
 		Debug.Log(position);
+
+		if (endofgame.activeSelf)
+		{
+			MoveSpeed = 0;
+		}
 	}
 
 	void OnTriggerStay(Collider other)

@@ -11,6 +11,8 @@ public class Counter : MonoBehaviour
     public Sprite[] sprites;
     public int count;
 
+    public GameObject endgameobject;
+
     void Start()
     {
         //image = gameObject.GetComponent<Image>();
@@ -18,11 +20,17 @@ public class Counter : MonoBehaviour
 
     void Update()
     {
-            image.sprite = sprites[count];
-            if (count > sprites.Length - 1)
-            {
-                count = sprites.Length - 1;
-            }
+        image.sprite = sprites[count];
+        if (count > sprites.Length - 1)
+        {
+            count = sprites.Length - 1;
+        }
+
+        if (count == 5)
+        {
+            Debug.Log("WINNER WINNER");
+            endgameobject.SetActive(true);
+        }
     }
 
 

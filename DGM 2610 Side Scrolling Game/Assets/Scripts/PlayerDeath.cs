@@ -7,13 +7,14 @@ public class PlayerDeath : MonoBehaviour
 
 	void OnTriggerEnter(Collider col)
 	{
-		if (col.gameObject.CompareTag("Thing") || col.gameObject.CompareTag("HazardRock"))
+		if (col.gameObject.CompareTag("Thing") || col.gameObject.CompareTag("HazardRock") || 
+		    col.gameObject.CompareTag("DeathZone"))
 		{
 			playerDeath();
 		}
 	}
 
-	void playerDeath()
+	public void playerDeath()
 	{
 		Application.LoadLevel(Application.loadedLevel); //Resets the scene
 	}

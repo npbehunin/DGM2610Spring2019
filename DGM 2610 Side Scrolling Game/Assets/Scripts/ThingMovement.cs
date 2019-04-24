@@ -12,6 +12,7 @@ public class ThingMovement : MonoBehaviour {
 	public float smoothSpeed = 10f;
 
 	public CharacterMover player;
+	public GameObject endofgame;
 
 	public bool canBeShot;
 	public bool canMove;
@@ -36,6 +37,11 @@ public class ThingMovement : MonoBehaviour {
 			Vector3 smoothedPosition = Vector3.Lerp(transform.position, playerPosition, smoothSpeed);
 
 			transform.position = smoothedPosition;
+		}
+
+		if (endofgame.activeSelf)
+		{
+			MoveSpeed = 0;
 		}
 	}
 
