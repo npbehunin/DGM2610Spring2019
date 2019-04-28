@@ -62,27 +62,30 @@ public class ThingMovement : MonoBehaviour {
 		}
 	}
 
-	void OnTriggerEnter(Collider other)
-	{
-		if (other.gameObject.CompareTag("Lazerbeam"))
-		{
-			if (canBeShot)
-			{
-				MoveSpeed = 8f;
-				Debug.Log("HIT");
-				Destroy(other);
-				StartCoroutine(Invincibility());
-			}
-		}
-	}
+	//void OnTriggerEnter(Collider other)
+	//{
+		//if (other.gameObject.CompareTag("Lazerbeam"))
+		//{
+			//if (canBeShot)
+			//{
+			//	MoveSpeed = 8f;
+				//Debug.Log("HIT");
+				//Destroy(other);
+				//StartCoroutine(Invincibility());
+			//}
+		//}
+	//}
 
-	IEnumerator Invincibility()
-	{
-		canBeShot = false;
-		yield return new WaitForSeconds(10);
-		canBeShot = true;
-		MoveSpeed = 10f;
-	}
+	//IEnumerator Invincibility()
+	//{
+		//thingmaterial.color = Color.red;
+		//canBeShot = false;
+		//yield return new WaitForSeconds(1.5f);
+		//thingmaterial.color = Color.white;
+		//canBeShot = true;
+		//MoveSpeed = 10f;
+		//yield return new WaitForSeconds(10);
+	//}
 
 	private IEnumerator WaitRandom()
 	{

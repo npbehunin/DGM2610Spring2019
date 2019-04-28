@@ -34,7 +34,7 @@ public class UIDanger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(distance);
+        //Debug.Log(distance);
         DangerImage.color = new Color(1f, 1f, 1f, opacity);
         distance = (thing.transform.position.x - player.transform.position.x);
 

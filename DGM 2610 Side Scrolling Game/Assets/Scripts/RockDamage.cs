@@ -44,7 +44,7 @@ public class RockDamage : MonoBehaviour
 		{
 			Vector3 desiredposition = transform.position + offset;
 			Instantiate(pieces, desiredposition, transform.rotation = Quaternion.Euler(0, x, 0));
-			Destroy(gameObject);
+			gameObject.SetActive(false);
 			//Instantiate(pieces, transform.position, Quaternion.identity);
 		}
 	}

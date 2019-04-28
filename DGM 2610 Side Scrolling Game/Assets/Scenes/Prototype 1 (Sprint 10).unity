@@ -20603,6 +20603,7 @@ MonoBehaviour:
   gravity: {fileID: 534428677}
   thing: {fileID: 1915371262}
   audiosource: {fileID: 0}
+  StunTime: 5
   stunnedcolor: {r: 0.9528302, g: 0.09438412, b: 0.09438412, a: 0}
 --- !u!114 &534428677
 MonoBehaviour:
@@ -20680,7 +20681,7 @@ AudioSource:
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -20688,23 +20689,14 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
+      time: 0.002
       value: 1
-      inSlope: 0
-      outSlope: 0
+      inSlope: -500.20065
+      outSlope: -500.20065
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -34015,6 +34007,7 @@ MonoBehaviour:
   gravity: {fileID: 748908603}
   thing: {fileID: 1915371262}
   audiosource: {fileID: 0}
+  StunTime: 4.5
   stunnedcolor: {r: 0.9528302, g: 0.09438412, b: 0.09438412, a: 0}
 --- !u!114 &748908603
 MonoBehaviour:
@@ -38987,6 +38980,7 @@ MonoBehaviour:
   player: {fileID: 1249032804}
   thingenable: {fileID: 1459242318}
   gamestart: {fileID: 223430768}
+  uidanger: {fileID: 114380060}
   audiosource: {fileID: 0}
 --- !u!4 &907075355
 Transform:
@@ -52490,6 +52484,7 @@ MonoBehaviour:
   gravity: {fileID: 1179366658}
   thing: {fileID: 1915371262}
   audiosource: {fileID: 1179366665}
+  StunTime: 4.6
   stunnedcolor: {r: 0.9528302, g: 0.09438412, b: 0.09438412, a: 0}
 --- !u!82 &1179366665
 AudioSource:
@@ -54426,7 +54421,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4948991642565334, guid: 01d09f56122d31e469c6606267b14657, type: 2}
       propertyPath: m_RootOrder
-      value: 84
+      value: 83
       objectReference: {fileID: 0}
     - target: {fileID: 1628979052754210, guid: 01d09f56122d31e469c6606267b14657, type: 2}
       propertyPath: m_Name
@@ -55116,6 +55111,7 @@ MonoBehaviour:
   player: {fileID: 1249032805}
   animator: {fileID: 1413045109}
   HasLazergun: 0
+  CanShoot: 0
 --- !u!114 &1249032815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59408,6 +59404,7 @@ MonoBehaviour:
   gravity: {fileID: 1374864966}
   thing: {fileID: 1915371262}
   audiosource: {fileID: 0}
+  StunTime: 0
   stunnedcolor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &1375639718 stripped
 Transform:
@@ -72529,6 +72526,7 @@ MonoBehaviour:
   gravity: {fileID: 1757682001}
   thing: {fileID: 1915371262}
   audiosource: {fileID: 0}
+  StunTime: 6.5
   stunnedcolor: {r: 0.9528302, g: 0.09438412, b: 0.09438412, a: 0}
 --- !u!135 &1757682003
 SphereCollider:
@@ -77636,8 +77634,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 15.122131, y: 26.655167, z: 7.171882}
-  m_Center: {x: -0.691803, y: -0.07779503, z: 0.2633109}
+  m_Size: {x: 17.594147, y: 21.035694, z: 7.171882}
+  m_Center: {x: -2.3089752, y: -0.13727379, z: 0.2633109}
 --- !u!212 &1915371260
 SpriteRenderer:
   m_ObjectHideFlags: 0

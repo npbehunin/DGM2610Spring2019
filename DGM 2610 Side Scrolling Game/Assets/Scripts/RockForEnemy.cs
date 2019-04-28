@@ -12,8 +12,12 @@ public class RockForEnemy : MonoBehaviour
 	private bool HitLong;
 	private bool canPlay;
 
+	private bool CanHit;
+
 	public ThingMovement thing;
 	public AudioSource audiosource;
+
+	public float StunTime;
 
 	private Color thingcolor;
 	public Color stunnedcolor;
@@ -21,16 +25,17 @@ public class RockForEnemy : MonoBehaviour
 
 	void Start()
 	{
+		CanHit = true;
 		rb = GetComponent<Rigidbody>();
 		rb.isKinematic = true;
 		HitDirect = false;
 		HitLong = false;
 		audiosource = GetComponent<AudioSource>();
 		thingmaterial = thing.thingmaterial;
-		thingcolor = thingmaterial.color;
+		thingcolor = Color.white;
 	}
 
-	void OnTriggerEnter(Collider col)
+	void OnTriggerStay(Collider col)
 	{
 		if (col.gameObject.CompareTag("Lazerbeam"))
 		{
@@ -41,14 +46,19 @@ public class RockForEnemy : MonoBehaviour
 
 		if (col.gameObject.CompareTag("Thing"))
 		{
-			if (HitDirect)
+			if (CanHit)
 			{
-				StartCoroutine(EnemyStun());
-			}
+				if (HitDirect)
+				{
+					StartCoroutine(EnemyStun());
+					CanHit = false;
+				}
 
-			if (HitLong)
-			{
-				StartCoroutine(EnemySlow());
+				if (HitLong)
+				{
+					StartCoroutine(EnemySlow());
+					CanHit = false;
+				}
 			}
 		}
 	}
@@ -68,7 +78,7 @@ public class RockForEnemy : MonoBehaviour
 		thing.canBeShot = false;
 		thingmaterial.color = stunnedcolor;
 		StartCoroutine(PlaySound());
-		yield return new WaitForSeconds(3);
+		yield return new WaitForSeconds(StunTime);
 		thingmaterial.color = thingcolor;
 		thing.canMove = true;
 		thing.canBeShot = true;
@@ -85,6 +95,7 @@ public class RockForEnemy : MonoBehaviour
 	
 	private IEnumerator PlaySound()
 	{
+		Debug.Log("Played thud");
 		canPlay = false;
 		audiosource.Play();
 		yield return new WaitForSeconds(audiosource.clip.length);

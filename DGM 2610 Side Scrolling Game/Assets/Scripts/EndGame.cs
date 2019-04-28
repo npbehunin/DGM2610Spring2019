@@ -18,6 +18,7 @@ public class EndGame : MonoBehaviour
 	public GameObject player;
 	public GameObject thingenable;
 	public GameObject gamestart;
+	public GameObject uidanger;
 
 	public AudioSource audiosource;
 	
@@ -41,6 +42,7 @@ public class EndGame : MonoBehaviour
 		player.SetActive(false);
 		thingenable.SetActive(false);
 		gamestart.SetActive(false);
+		uidanger.SetActive(false);
 		audiosource.Play();
 		yield return new WaitForSeconds(audiosource.clip.length);
 		audiosource.Stop();

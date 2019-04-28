@@ -12,10 +12,11 @@ public class ShootingMechanic : MonoBehaviour
 	public Animator animator;
 
 	public bool HasLazergun;
+	public bool CanShoot;
 
 	void Start ()
 	{
-		
+		CanShoot = true;
 	}
 	
 	void Update ()
@@ -23,14 +24,22 @@ public class ShootingMechanic : MonoBehaviour
 		{
 			if (Input.GetMouseButtonDown(0))
 			{
-				if (HasLazergun)
+				if (HasLazergun && CanShoot)
 				{
 					GameObject obj = Instantiate(lazer, player.transform.position, Quaternion.identity);
 					StartCoroutine(SetAnim());
+					StartCoroutine(DelayShoot());
 				}
 			}
 		}
 		
+	}
+
+	private IEnumerator DelayShoot()
+	{
+		CanShoot = false;
+		yield return new WaitForSeconds(.1f);
+		CanShoot = true;
 	}
 
 	private IEnumerator SetAnim()
