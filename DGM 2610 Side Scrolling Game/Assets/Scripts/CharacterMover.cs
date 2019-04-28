@@ -18,8 +18,11 @@ public class CharacterMover : MonoBehaviour
 	private bool IsRunning;
 	private bool IsPushing;
 	private bool IsShooting;
+	private bool canPlay;
 
 	public Animator animator;
+	public AudioSource audiosource;
+	public AudioClip running;
 	
 	Rigidbody m_rb;
 	private RollingRock rollingrock;
@@ -32,37 +35,59 @@ public class CharacterMover : MonoBehaviour
 	void Start ()
 	{
 		Controller = GetComponent<CharacterController>();
+		audiosource = GetComponent<AudioSource>();
+		canPlay = true;
 		//m_rb = rollingrock.GetComponent<Rigidbody>();
 	}
 	
 	void Update ()
 	{
 		{
+			//Debug.Log(canPlay);
 			position.Set(MoveSpeed * Input.GetAxis("Horizontal"), position.y, 0);
 			if (Controller.isGrounded)
 			{
 				position.Set(MoveSpeed * Input.GetAxis("Horizontal"), 0, 0);
-				if (IsRunning == false && IsPushing == false && IsShooting == false)
+				//if (IsRunning == false && IsPushing == false && IsShooting == false)
+				if (Input.GetAxis("Horizontal") < 0)
 				{
-					if (Input.GetAxis("Horizontal") < 0)
-					{
-						animator.SetBool("Running", true);
-						animator.SetFloat("XSpeed", -1);
-						animator.SetBool("Mirrored", true);
-					}
+					animator.SetBool("Running", true);
+					animator.SetFloat("XSpeed", -1);
+					animator.SetBool("Mirrored", true);
+				}
 
-					if (Input.GetAxis("Horizontal") > 0)
+				if (Input.GetAxis("Horizontal") > 0)
+				{
+					animator.SetBool("Running", true);
+					animator.SetFloat("XSpeed", 1);
+					animator.SetBool("Mirrored", false);
+				}
+					
+				if (Input.GetAxis("Horizontal") > 0 || (Input.GetAxis("Horizontal") < 0))
+				{
+					if (canPlay)
 					{
-						animator.SetBool("Running", true);
-						animator.SetFloat("XSpeed", 1);
-						animator.SetBool("Mirrored", false);
+						//Debug.Log("Hi yes you can play");
+						audiosource.Play();
+						audiosource.clip = running;
+						canPlay = false;
 					}
+				}
+				else
+				{
+					canPlay = true;
+					audiosource.Stop();
 				}
 
 				if (Input.GetButton("Jump"))
 				{
 					position.y = JumpSpeed;
 				}
+			}
+			else
+			{
+				canPlay = true;
+				audiosource.Stop();
 			}
 		}
 		position.y -= Gravity * Time.deltaTime;
@@ -114,7 +139,7 @@ public class CharacterMover : MonoBehaviour
 		{
 			animator.SetBool("Idle", false);
 		}
-		Debug.Log(position);
+		//Debug.Log(position);
 
 		if (endofgame.activeSelf)
 		{

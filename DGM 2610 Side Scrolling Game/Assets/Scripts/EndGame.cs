@@ -13,20 +13,37 @@ public class EndGame : MonoBehaviour
 	
 	public float fadeOutTime;
 	public float opacity;
+
+	public GameObject thing;
+	public GameObject player;
+	public GameObject thingenable;
+	public GameObject gamestart;
+
+	public AudioSource audiosource;
 	
 	void Start ()
 	{
+		audiosource = GetComponent<AudioSource>();
 		Debug.Log("Now active");
 		StartCoroutine(EndTheGame());
-		//image1.color = new Color(1f, 1f, 1f, opacity);
-		//image2.color = new Color(1f, 1f, 1f, opacity);
-		//youescaped.color = new Color(1f, 1f, 1f, opacity);
-		//playagain.color = new Color(1f, 1f, 1f, opacity);
+		StartCoroutine(DisableObjects());
 	}
 	
 	void Update ()
 	{
 		
+	}
+
+	private IEnumerator DisableObjects()
+	{
+		yield return new WaitForSeconds(1);
+		thing.SetActive(false);
+		player.SetActive(false);
+		thingenable.SetActive(false);
+		gamestart.SetActive(false);
+		audiosource.Play();
+		yield return new WaitForSeconds(audiosource.clip.length);
+		audiosource.Stop();
 	}
 	
 	private IEnumerator EndTheGame()

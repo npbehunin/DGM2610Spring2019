@@ -88,6 +88,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 30
   speed: 30
+  shooting: {fileID: 8300000, guid: b52ae7f185a32d64389df804edba841a, type: 3}
 --- !u!136 &136142225916305580
 CapsuleCollider:
   m_ObjectHideFlags: 0

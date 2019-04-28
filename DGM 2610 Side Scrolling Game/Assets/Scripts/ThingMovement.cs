@@ -10,22 +10,39 @@ public class ThingMovement : MonoBehaviour {
 	
 	public float MoveSpeed;
 	public float smoothSpeed = 10f;
+	private int random;
 
 	public CharacterMover player;
 	public GameObject endofgame;
 
 	public bool canBeShot;
 	public bool canMove;
+	public bool canPlay;
+	
+	public AudioSource audiosource;
+	public Material thingmaterial;
 	
 	void Start ()
 	{
+		random = 10;
 		MoveSpeed = 10f;
 		canBeShot = true;
 		canMove = false;
+		canPlay = false;
+		StartCoroutine(WaitRandom());
+		audiosource = GetComponent<AudioSource>();
+		thingmaterial = GetComponent<Material>();
 	}
-	
-	void LateUpdate () 
+
+	void LateUpdate ()
 	{
+		//Debug.Log(random);
+		random = Random.Range(8, 15);
+		if (canPlay)
+		{
+			StartCoroutine(PlaySound());
+		}
+
 		if (canMove)
 		{
 			position.Set(MoveSpeed, 0, 0);
@@ -62,11 +79,26 @@ public class ThingMovement : MonoBehaviour {
 	IEnumerator Invincibility()
 	{
 		canBeShot = false;
-		yield return new WaitForSeconds(4);
+		yield return new WaitForSeconds(10);
 		canBeShot = true;
 		MoveSpeed = 10f;
 	}
+
+	private IEnumerator WaitRandom()
+	{
+		yield return new WaitForSeconds(random);
+		canPlay = true;
+	}
 	
+	private IEnumerator PlaySound()
+	{
+		//Debug.Log("WWEEEE");
+		canPlay = false;
+		audiosource.Play();
+		yield return new WaitForSeconds(audiosource.clip.length);
+		audiosource.Stop();
+		StartCoroutine(WaitRandom());
+	}
 }
 
 //Position is used for the object's local position. Here we use transform.position for the object's location in the

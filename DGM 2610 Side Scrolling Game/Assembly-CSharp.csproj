@@ -55,6 +55,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\BackgroundSound.cs" />
     <Compile Include="Assets\Scripts\CameraFollowPlayer.cs" />
     <Compile Include="Assets\Scripts\CanvasSettings.cs" />
     <Compile Include="Assets\Scripts\CharacterMover.cs" />
@@ -76,6 +77,7 @@
     <Compile Include="Assets\Scripts\RockForEnemy.cs" />
     <Compile Include="Assets\Scripts\RollingRock.cs" />
     <Compile Include="Assets\Scripts\ShootingMechanic.cs" />
+    <Compile Include="Assets\Scripts\SoundOnStart.cs" />
     <Compile Include="Assets\Scripts\SwitchEnable.cs" />
     <Compile Include="Assets\Scripts\ThingEnable.cs" />
     <Compile Include="Assets\Scripts\ThingMovement.cs" />

@@ -14,6 +14,10 @@ public class Collectable : MonoBehaviour
 	public bool IsLazergun;
 	public ShootingMechanic sh;
 	public GameObject gun;
+	
+	public AudioSource audiosource;
+	public AudioClip metal;
+	public AudioClip powerup;
 
 	void Update () 
 	{
@@ -27,12 +31,17 @@ public class Collectable : MonoBehaviour
 			if (IsCollectable)
 			{
 				counter.count++;
+				Debug.Log("Played");
+				audiosource.clip = metal;
+				audiosource.Play();
 			}
 
 			if (IsLazergun)
 			{
 				gun.SetActive(true);
 				sh.HasLazergun = true;
+				audiosource.clip = powerup;
+				audiosource.Play();
 			}
 			
 

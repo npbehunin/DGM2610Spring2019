@@ -30,7 +30,6 @@ public class DoorOpen : MonoBehaviour
 		{
 			maxyPos = transform.position.y + 8f;
 			maxxPos = transform.position.x + 8f;
-			Debug.Log("Beeg");
 		}
 		else
 		{

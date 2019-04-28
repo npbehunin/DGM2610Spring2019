@@ -20,11 +20,19 @@ public class Lazerbeam : MonoBehaviour
 	private Vector3 targetDir;
 
 	public float speed;
+	
+	private bool canPlay;
+	
+	private AudioSource audiosource;
+	public AudioClip shooting;
 
 	//private int layerMask = 1 << 10;
 
 	void Start()
 	{
+		audiosource = gameObject.GetComponent<AudioSource>();
+		canPlay = true;
+		StartCoroutine(GunSound());
 		ray = Camera.main.ScreenPointToRay(Input.mousePosition); //Converts mouse position to units on camera.
 
 		if (Physics.Raycast(ray, out hit, Mathf.Infinity))
@@ -50,6 +58,16 @@ public class Lazerbeam : MonoBehaviour
 
 		// Move our position a step closer to the target.
 		transform.rotation = Quaternion.LookRotation(newDir);
+	}
+	
+	private IEnumerator GunSound()
+	{
+		audiosource.clip = shooting;
+		audiosource.Play();
+		canPlay = false;
+		yield return new WaitForSeconds(audiosource.clip.length);
+		audiosource.Stop();
+		canPlay = true;
 	}
 
 	IEnumerator Destroy()

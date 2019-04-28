@@ -13,7 +13,7 @@ public class ShootingMechanic : MonoBehaviour
 
 	public bool HasLazergun;
 
-	void Start () 
+	void Start ()
 	{
 		
 	}

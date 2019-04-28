@@ -10,8 +10,14 @@ public class RockForEnemy : MonoBehaviour
 
 	private bool HitDirect;
 	private bool HitLong;
+	private bool canPlay;
 
 	public ThingMovement thing;
+	public AudioSource audiosource;
+
+	private Color thingcolor;
+	public Color stunnedcolor;
+	private Material thingmaterial;
 
 	void Start()
 	{
@@ -19,6 +25,9 @@ public class RockForEnemy : MonoBehaviour
 		rb.isKinematic = true;
 		HitDirect = false;
 		HitLong = false;
+		audiosource = GetComponent<AudioSource>();
+		thingmaterial = thing.thingmaterial;
+		thingcolor = thingmaterial.color;
 	}
 
 	void OnTriggerEnter(Collider col)
@@ -57,7 +66,10 @@ public class RockForEnemy : MonoBehaviour
 	{
 		thing.canMove = false;
 		thing.canBeShot = false;
+		thingmaterial.color = stunnedcolor;
+		StartCoroutine(PlaySound());
 		yield return new WaitForSeconds(3);
+		thingmaterial.color = thingcolor;
 		thing.canMove = true;
 		thing.canBeShot = true;
 	}
@@ -69,6 +81,15 @@ public class RockForEnemy : MonoBehaviour
 		yield return new WaitForSeconds(3);
 		thing.MoveSpeed = 9f;
 		thing.canBeShot = true;
+	}
+	
+	private IEnumerator PlaySound()
+	{
+		canPlay = false;
+		audiosource.Play();
+		yield return new WaitForSeconds(audiosource.clip.length);
+		audiosource.Stop();
+		canPlay = true;
 	}
 }
 
